@@ -33,7 +33,7 @@ function UploadNewItem({user,navigation}){
             //         .doc(imagename)
             //         .set(post)
 
-                    fetch("https://xchangerujiya.herokuapp.com/post",{
+                    fetch("https://xchangenodejsapi.herokuapp.com/post",{
                         method:"post",
                         headers:{
                           'Content-Type': 'application/json'

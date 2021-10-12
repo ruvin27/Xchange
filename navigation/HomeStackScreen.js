@@ -25,7 +25,7 @@ function HomeStackScreen({navigation, user, updateNot}) {
           //     .where("notified","==","f")
           //     .orderBy('time', 'desc')
           //     .get()
-          axios.get(`https://xchangerujiya.herokuapp.com/notification/icon/${user.email}`)
+          axios.get(`https://xchangenodejsapi.herokuapp.com/notification/icon/${user.email}`)
               .then((querySnapshot) => {
                //  console.log('Total Posts: ', querySnapshot.size);
                if(querySnapshot.data.length!=0){

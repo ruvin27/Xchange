@@ -21,7 +21,7 @@ const Notifications = ({user, updateNot}) => {
       //   .where("notified","==","f")
       //   .orderBy('time', 'desc')
       //   .get()
-      axios.get(`https://xchangerujiya.herokuapp.com/notification/${user.email}`)
+      axios.get(`https://xchangenodejsapi.herokuapp.com/notification/${user.email}`)
         .then((querySnapshot) => {
           // console.log('Total Posts: ', querySnapshot.size);
           // console.log(querySnapshot.data)
@@ -39,7 +39,7 @@ const Notifications = ({user, updateNot}) => {
             // .collection('bookings')
             // .doc(productID)
             // .delete()
-            axios.patch(`https://xchangerujiya.herokuapp.com/notification/${user.email}`)
+            axios.patch(`https://xchangenodejsapi.herokuapp.com/notification/${user.email}`)
             list.push({
               buyer,
               seller,

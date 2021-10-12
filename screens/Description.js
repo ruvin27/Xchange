@@ -29,7 +29,7 @@ function Description({navigation, route, user}){
               
           //   console.log(querySnapshot.data())
           // })
-          axios.get(`https://xchangerujiya.herokuapp.com/item/${route.params.productId}`)
+          axios.get(`https://xchangenodejsapi.herokuapp.com/item/${route.params.productId}`)
             .then((querySnapshot) => {
               
                 // console.log(querySnapshot.data)
@@ -83,7 +83,7 @@ function Description({navigation, route, user}){
         // .set(new_booking)
         axios({
           method: 'post',
-          url: "https://xchangerujiya.herokuapp.com/book",
+          url: "https://xchangenodejsapi.herokuapp.com/book",
           headers: {}, 
           data: new_booking
         })

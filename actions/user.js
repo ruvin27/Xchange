@@ -97,7 +97,7 @@ export const signup = () => {
                     .doc(response.user.uid)
                     .set(user)
 
-                    fetch("https://xchangerujiya.herokuapp.com/register",{
+                    fetch("https://xchangenodejsapi.herokuapp.com/register",{
                         method:"post",
                         headers:{
                           'Content-Type': 'application/json'

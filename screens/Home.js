@@ -25,7 +25,7 @@ function Home({navigation, user}) {
       const list = [];
       
 
-      await fetch("https://xchangerujiya.herokuapp.com/post",{
+      await fetch("https://xchangenodejsapi.herokuapp.com/post",{
                         method:"get"
                     })
                     .then(res=>res.json())

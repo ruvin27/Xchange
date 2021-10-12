@@ -14,7 +14,7 @@ import * as firebase from 'firebase';
     try {
       const list = [];
 
-      await fetch(`https://xchangerujiya.herokuapp.com/uploads/${user.email}`,{
+      await fetch(`https://xchangenodejsapi.herokuapp.com/uploads/${user.email}`,{
         method:"get"
         })
         .then(res=>res.json())
@@ -108,7 +108,7 @@ import * as firebase from 'firebase';
   };
 
   const deleteFirestoreData = (_id) => {
-    axios.delete(`https://xchangerujiya.herokuapp.com/delete/${_id}`)
+    axios.delete(`https://xchangenodejsapi.herokuapp.com/delete/${_id}`)
       .then(() => {
 
         navigation.navigate('Home')
